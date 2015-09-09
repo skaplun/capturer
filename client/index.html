@@ -1,0 +1,131 @@
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="./js/crel.js"></script>
+    <script src="./js/main.js"></script>
+    
+        <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.1.2/parsley.min.js"></script>
+    
+    <style>
+        body{
+            font-family: Arial;
+            overflow-x: hidden;
+        }
+        .top{
+            width: 100%;
+            text: 20px;
+            /*height: 50px;*/
+            border-bottom: 1px solid black;
+        }
+        .top form {
+            position: relative;
+            left: 50%;
+            margin-left: -10%;
+            margin-top: 2%;
+            margin-bottom: 2%;
+            
+        }
+        
+         .top .input-group {
+            width: 20%;
+        }
+         .top input::-webkit-input-placeholder {
+            position: relative;
+            left: 5%;
+        }
+        
+        .placeHolder{
+            position: relative;
+            left: 50%;
+            margin-left: -9%;
+            margin-top: 15%;
+            font-size: 28px;
+            font-family: arial;
+            color: grey;
+            
+        }
+        
+        .mainImage{
+             margin: 0 0 0 -8px;   
+        }
+        .layer{
+            width: 600px;
+            height:450px;
+            z-index: 10;
+            position: absolute;
+            top: 200px;
+            left: 61%;
+            background: white;
+            
+        }
+        
+        .modalMainButton {
+            
+            position: absolute;
+            top: 85%;
+            left: 44%;
+        }
+        
+        .modal h1 {
+            margin-left: 30%;
+            
+        }
+        .queryTitles{
+            border-bottom: 1px solid rgb(221, 221, 221);
+            margin-bottom: 5px;
+        } 
+        
+        .queryTitles button {
+            margin: 3px;
+          
+        }
+        
+        .queryHtml {
+            max-height: 160px;
+            overflow-y: auto;
+            
+        }
+       
+    </style>
+    
+</head>
+
+<body>
+    
+    <div class="top">
+        
+        <form data-parsley-validate>
+            
+            <div class="input-group input-group">
+                <span class="input-group-addon" id="sizing-addon1"><strong>HTTP(S)</strong></span>
+                <input type="url" data-parsley-type="url"  class="form-control" placeholder="Enter URL" >
+                <span class="input-group-btn">
+                    <input id="urlSubmit" class="btn btn-success" type="submit" value="Go!"></button>
+                </span>
+            </div>
+
+
+            
+            
+        </form>
+    </div>
+    
+    <div class="middle">
+       
+       <div class="placeHolder">Enter a URL above to start</div>
+       
+       
+    </div>
+    
+    
+</body>
